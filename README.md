@@ -1,3 +1,30 @@
+# MobilePhantom
+
+Adding an experimental GUI to [Phantom](https://github.com/jhead/phantom). Cross-platform, supporting desktop + mobile.
+UI made with [Fyne](https://github.com/fyne-io/fyne)
+
+Binaries can be found in the [releases](https://github.com/SondreKindem/mobilePhantom/releases)
+
+## Getting started locally
+1. [Install Fyne and required compilers](https://developer.fyne.io/started/)
+2. To run locally first `cd mobile` then `go run .`
+
+## Packaging binaries
+
+Run `fyne package -os <platform>` where `<platform>` is windows, android, ios, etc...
+
+(Remember to include the gopath bin folder in your path to run fyne)
+
+## Releasing binaries
+
+Same as packaging, but using the release command: `fyne release -os <platform>`
+Make sure to read the [Fyne docs on distribution](https://developer.fyne.io/started/distribution)
+
+<br/>
+<hr/>
+
+# Original readme
+
 [![Downloads](https://img.shields.io/github/downloads/jhead/phantom/total)](https://github.com/jhead/phantom/releases) [![Gitter](https://badges.gitter.im/phantom-minecraft/community.svg)](https://gitter.im/phantom-minecraft/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 # phantom
