@@ -1,6 +1,6 @@
 [![Downloads](https://img.shields.io/github/downloads/6jarjar6/phantom/total)](https://github.com/6jarjar6/phantom/releases)
 
-# phantom
+# phantomX - a phantom fork
 
 Makes hosted Bedrock/MCPE servers show up as LAN servers, specifically for consoles.
 
@@ -12,7 +12,9 @@ It's like having a LAN server that's not actually there, spooky.
 
 phantom is a command line application with no GUI (yet). See the usage section below.
 
-[Download](https://github.com/jhead/phantom/releases) phantom from the releases page.
+[Download](https://github.com/6jarjar6/phantomX/releases) phantomX from this repo releases page.
+
+[Download](https://github.com/jhead/phantom/releases) phantom from jhead's repo releases page.
 
 **macOS / Linux**
 
