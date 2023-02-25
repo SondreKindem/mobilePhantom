@@ -6,7 +6,7 @@ require (
 	// github.com/golang/glog v1.0.0
 	github.com/libp2p/go-reuseport v0.2.0
 	github.com/rs/zerolog v1.29.0
-	github.com/stretchr/testify v1.8.1
+	github.com/stretchr/testify v1.8.2
 	github.com/tevino/abool/v2 v2.1.0
 )
 
