@@ -3,12 +3,16 @@ package main
 import (
 	"errors"
 	"fmt"
+	"os"
+	"time"
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/widget"
 	"github.com/jhead/phantom/internal/proxy"
 	"strconv"
+	"github.com/rs/zerolog"
+    "github.com/rs/zerolog/log"
 )
 
 func main() {
@@ -21,6 +25,9 @@ func main() {
 	var proxyServer *proxy.ProxyServer
 	var err error
 	//var loading = false
+	log.Logger = log.
+        Output(zerolog.ConsoleWriter{Out: os.Stdout}).
+        Level(zerolog.InfoLevel)
 
 	hello := widget.NewLabel("MobilePhantom")
 	status := widget.NewLabel("Waiting for input")
@@ -57,9 +64,9 @@ func main() {
 		} else if portInput.Validate() == nil && ipInput.Validate() == nil {
 			proxyServer, err = proxy.New(proxy.ProxyPrefs{
 				BindAddress:  "0.0.0.0",
-				BindPort:     0,
+				BindPort:     19131,
 				RemoteServer: fmt.Sprintf("%s:%s", ipInput.Text, portInput.Text),
-				IdleTimeout:  60,
+				IdleTimeout:  time.Duration(60) * time.Second,
 				EnableIPv6:   false,
 				RemovePorts:  false,
 				NumWorkers:   1,
