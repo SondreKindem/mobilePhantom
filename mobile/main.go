@@ -20,7 +20,7 @@ func main() {
 
 	var proxyServer *proxy.ProxyServer
 	var err error
-	var loading = false
+	//var loading = false
 
 	hello := widget.NewLabel("MobilePhantom")
 	status := widget.NewLabel("Waiting for input")
@@ -67,7 +67,7 @@ func main() {
 			if err != nil {
 				status.SetText(fmt.Sprintf("Failed to init server: %s", err))
 				proxyServer = nil
-				loading = false
+				// loading = false
 				enableInput()
 				enableButton()
 				return

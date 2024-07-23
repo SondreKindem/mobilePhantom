@@ -11,9 +11,9 @@ Binaries can be found in the [releases](https://github.com/SondreKindem/mobilePh
 
 ## Packaging binaries
 
-Run `fyne package -os <platform>` where `<platform>` is windows, android, ios, etc...
-
-(Remember to include the gopath bin folder in your path to run fyne)
+In the mobile folder, run `fyne package -os <platform>` where `<platform>` is windows, android, ios, etc...
+Example: `fyne package -os windows -icon Icon.png`
+This places an executable in the current folder
 
 ## Releasing binaries
 
